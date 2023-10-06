@@ -38,7 +38,7 @@ contract MerkleDistribution {
         require(verify(merkleProof, node), "Invalid proof");
 
         claimed[msg.sender] = amount;
-        ERC20 token = ERC20(0xE7f419b437f27d3f09b174DeF166D6CCC4C7d824); // Replace with actual token address
+        ERC20 token = ERC20(0xE7f419b437f27d3f09b174DeF166D6CCC4C7d824);
         token.transfer(msg.sender, amount);
     }
 
