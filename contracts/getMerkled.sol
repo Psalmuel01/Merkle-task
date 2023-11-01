@@ -4,7 +4,6 @@ pragma solidity ^0.8.19;
 contract MerkleTree {
     bytes32 public root;
 
-
     function generateMerkleRoot(
         address[] memory addresses,
         uint256[] memory amounts

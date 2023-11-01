@@ -38,8 +38,8 @@ async function main() {
   console.log(`Merkle token deployed to ${getMerkle.target}`);
   //   0xfe5f4E1c61866F8F9570fab86cE5381385eeC0Bb test
 
-  const merkleRoots = await getMerkle.generateMerkleRoot(addresses, amounts);
-  console.log(`Merkle root: ${merkleRoots}`);
+  const merkleRoot = await getMerkle.generateMerkleRoot(addresses, amounts);
+  console.log(`Merkle root: ${merkleRoot}`);
   //0xf8211c37a0f3cf0cc80169c2a241e1171a2edf410beafa7e69b8bd4cd7b56c7a
 
   const merkleProofs = await getMerkle.generateMerkleProofs(
